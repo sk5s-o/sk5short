@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh" prefix="og: http://ogp.me/ns#">
+    <head>
+        <title>${your_title.value}</title>
+        <meta charset="utf-8">
+        <meta name="author" content="samko5sam"><!--作者-->
+        <meta name="description" content="${your_description.value}"><!--網站描述-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--viewport-->
+        <link rel="icon" type="image/png" href="${your_image.value}"><!-- 網站的favicon小圖標-->
+	      <!--OG-->
+	      <meta property="og:title" content="${your_title.value}">
+	      <meta property="og:description" content="${your_description.value}">
+	      <meta property="og:url" content="${your_url.value}">
+	      <meta property="og:locale" content="${your_locale.value}">
+	      <meta property="og:image" content="${your_image.value}">
+	      <meta property="og:type" content="${your_type.value}">
+	      <meta property="og:site_name" content="${your_site_name.value}">
+	      <!--辨識IE然後警告-->
+	      <!--[if lte IE 9]>
+            <script>alert("用IE瀏覽器可能會造成網頁不正常");</script>
+        <![endif]-->
+    </head>
+    <body>
+        <noscript><h1>您的瀏覽器不支援javascript，請手動按連結</h1></noscript><!--無javascript警告-->
+        <script>
+            window.location.href="${your_url.value}";
+        </script>
+        <h1><a href="${your_url.value}">GO</a></h1>
+    </body>
+</html>
