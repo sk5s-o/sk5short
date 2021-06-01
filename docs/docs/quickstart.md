@@ -1,117 +1,24 @@
-# Quick start
+# 快速開始
+?>在進行設定之前，建議您可以先了解一些關於html、facebook og tag的知識，像是這個[html教學](https://www.w3schools.com/html/html_editors.asp)，例如這個[facebook文章](https://developers.facebook.com/docs/sharing/webmasters)，然後再進行設定應該會比較了解。
 
-It is recommended to install `docsify-cli` globally, which helps initializing and previewing the website locally.
+首先要進入sk5short的網頁，[https://sk5s.github.io/sk5short/](https://sk5s.github.io/sk5short/)，您應該會看到一些表單。
 
-```bash
-npm i docsify-cli -g
-```
+![sk5short website](https://i.imgur.com/mOOLBjL.png)
+<small>sk5short website</small>
 
-## Initialize
+## 基本使用
+在表單中填入您要的資訊，url為必填，然後您可以按下更新預覽按鈕，看一下網址被分享後大概的預覽樣子，確認資訊之後，按下送出按鈕。接著會彈出一個視窗，請複製裡面程式碼區的所有字。
 
-If you want to write the documentation in the `./docs` subdirectory, you can use the `init` command.
+![submit modal](https://i.imgur.com/Tpb8wTE.png)
+<small>submit modal</small>
 
-```bash
-docsify init ./docs
-```
+接下來，打開純文字編輯器（像是windows筆記本）開一個新檔案，把所有複製的字都貼上去，然後存檔，檔名建議不要有英文以外的字，副檔名改成`.html`，像是`index.html`。
 
-## Writing content
+## 放到網路上
+把之前存好的檔案放到伺服器上，然後訪問那個檔案就可以重新導向至您先前填的url了！
 
-After the `init` is complete, you can see the file list in the `./docs` subdirectory.
+## 放上網路前測試
+要測試先前填寫表單時url有沒有填寫錯誤，可以在電腦把存好的html檔，用瀏覽器（如firefox）打開，如果打開後看到的網址是設定時的網址，那就代表檔案是正確的。
 
-* `index.html` as the entry file
-* `README.md` as the home page
-* `.nojekyll` prevents GitHub Pages from ignoring files that begin with an underscore
-
-You can easily update the documentation in `./docs/README.md`, of course you can add [more pages](more-pages.md).
-
-## Preview your site
-
-Run the local server with `docsify serve`. You can preview your site in your browser on `http://localhost:3000`.
-
-```bash
-docsify serve docs
-```
-
-?> For more use cases of `docsify-cli`, head over to the [docsify-cli documentation](https://github.com/docsifyjs/docsify-cli).
-
-## Manual initialization
-
-If you don't like `npm` or have trouble installing the tool, you can manually create `index.html`:
-
-```html
-<!-- index.html -->
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      //...
-    }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-</body>
-</html>
-```
-
-### Specifying docsify versions
-
-?> Note that in both of the examples below, docsify URLs will need to be manually updated when a new major version of docsify is released (e.g. `v4.x.x` => `v5.x.x`). Check the docsify website periodically to see if a new major version has been released.
-
-Specifying a major version in the URL (`@4`) will allow your site will receive non-breaking enhancements (i.e. "minor" updates) and bug fixes (i.e. "patch" updates) automatically. This is the recommended way to load docsify resources.
-
-```html
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
-<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-```
-
-If you prefer to lock docsify to a specific version, specify the full version after the `@` symbol in the URL. This is the safest way to ensure your site will look and behave the same way regardless of any changes made to future versions of docsify.
-
-```html
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4.11.4/themes/vue.css">
-<script src="//cdn.jsdelivr.net/npm/docsify@4.11.4"></script>
-```
-
-### Manually preview your site
-
-If you installed python on your system, you can easily use it to run a static server to preview your site.
-
-```python2
-cd docs && python -m SimpleHTTPServer 3000
-```
-```python3
-cd docs && python -m http.server 3000
-```
-
-## Loading dialog
-
-If you want, you can show a loading dialog before docsify starts to render your documentation:
-
-```html
-<!-- index.html -->
-
-<div id="app">Please wait...</div>
-```
-
-You should set the `data-app` attribute if you changed `el`:
-
-```html
-<!-- index.html -->
-
-<div data-app id="main">Please wait...</div>
-
-  <script>
-    window.$docsify = {
-      el: '#main'
-    }
-  </script>
-```
-
-Compare [el configuration](configuration.md#el).
+![open with firefox](https://i.imgur.com/fnWOsmn.jpg)
+<small>open with firefox</small>

@@ -1,2 +1,4 @@
-* [sk5short website](https://sk5s.github.io/sk5short/)
-* [Github](https://github.com/sk5s/sk5short)
+* [開始使用sk5short！](https://sk5s.github.io/sk5short/)
+* Translations
+  * [zh-TW](/)
+  * [en](/en/)
