@@ -1,3 +1,4 @@
+?> Because my English is bad, so if you could read chinese, I suggest you to read chinese traditional version. If you couldn't read, then you can translate chinese traditional docs to english by using something like google translate or microsoft translate, I will try to improve English docs if I could. Sorry!
 # sk5short
   > make a short link just in a minutes, use javascript to redirect. Can use github page, gitlab page etc. to host.
 
