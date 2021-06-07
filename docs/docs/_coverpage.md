@@ -1,4 +1,4 @@
-![docsify logo](https://docsify.js.org/_media/icon.svg)
+
 
 # sk5short
 

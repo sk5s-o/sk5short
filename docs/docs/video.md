@@ -1,1 +1,3 @@
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/v4z4Iikchgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# video
+
+<iframe width="560" height="360" src="sk5short-video-quickstart.html">video</iframe>
