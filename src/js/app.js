@@ -18,9 +18,10 @@ submit_form_button.addEventListener('click',function(e){
   console.log(content)
   modalMessage(`<h1 class='title is-2 uppercase'>copy this text</h1><pre><code id='code_area' contenteditable="true"></code>`)
   let textarea = document.getElementById('code_area')
-  textarea.innerText = `<!-- 
+  textarea.innerText = `<!--
 |     sk5short     |
 | make a short link just in a minutes, use javascript to redirect.| https://sk5s.github.io/sk5short/ -->${content}`
+  generate_download_button(textarea.innerText, 'index.html', 'txt')
 })
 
 function geturlfavicon(url){
@@ -51,4 +52,22 @@ function submit_form(){
   your_title.value = your_title.value === "" ? default_title : your_title.value
   your_description.value = your_description.value === "" ? default_description :your_description.value
   return `<!DOCTYPE html><html lang="zh" prefix="og: http://ogp.me/ns#"><head><title>${your_title.value}</title><meta charset="utf-8"><meta name="author" content="samko5sam"><meta name="description" content="${your_description.value}"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/png" href="${your_image.value}"><meta property="og:title" content="${your_title.value}"><meta property="og:description" content="${your_description.value}"><meta property="og:url" content="${your_url.value}"><meta property="og:locale" content="${your_locale.value}"><meta property="og:image" content="${your_image.value}"><meta property="og:type" content="${your_type.value}"><meta property="og:site_name" content="${your_site_name.value}"></head><body><noscript><h1>您的瀏覽器不支援javascript，請手動按連結<br><h2>Javascript didn't enable, please open it by yourself.</h2></h1></noscript><script>window.location.href="${your_url.value}";</script><h1><a href="${your_url.value}">GO</a></h1></body></html>`
+}
+
+function generate_download_button(data, filename, type) {
+  var file = new Blob([data], {type: type}); // Others
+  let a = document.createElement("a");
+  let url = URL.createObjectURL(file);
+  a.href = url;
+  a.download = filename;
+  a.classList.add('button','is-success','uppercase')
+  a.innerText = 'download'
+  let downloadButton = document.getElementById('download_button')
+  downloadButton.innerHTML = ""
+  downloadButton.appendChild(a);
+  a.click();
+  setTimeout(function() {
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }, 100);
 }
