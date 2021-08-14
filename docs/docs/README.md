@@ -14,3 +14,5 @@ sk5short用來製作短連結，用javascript來重新導向，可用github page
 
 # 使用範例
 可以看[範例](example.md)頁面
+
+> :new: Auto Download html file

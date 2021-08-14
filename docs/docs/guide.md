@@ -29,6 +29,9 @@
 ## 6. 按下submit鍵
 ![Imgur](https://i.imgur.com/vf4vZkH.png)
 
+## :new: 現在有新功能，按送出，即會自動下載html檔案
+
+
 ---
 ## 7. 會彈出一個視窗
 ![Imgur](https://i.imgur.com/Tpb8wTE.png)
