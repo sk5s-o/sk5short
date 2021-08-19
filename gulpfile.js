@@ -29,7 +29,7 @@ async function run_copy_image() {
     .pipe(gulp.dest('dist/img'))
 }
 async function run_copy_webfonts() {
-  gulp.src('src/webfonts/*')
+  gulp.src('src/css/fontawesome/webfonts/*')
     .pipe(gulp.dest('dist/webfonts'))
 }
 async function img() {
@@ -51,6 +51,7 @@ function run_js() {
 function run_css() {
   return gulp.src([
     'src/css/!(style)*.css', // all files that end in .css EXCEPT style*.css
+    'src/css/fontawesome/css/*.css',
     'src/css/style.css'
   ])
     .pipe(stripCssComments())
