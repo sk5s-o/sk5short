@@ -1,6 +1,14 @@
 # sk5short
 Sk5short make a short link just in a minutes, use javascript to redirect.
 
+## 現在有把網頁版做成桌面應用程式囉！
+
+### 下載
+到release可以找到
+### 使用
+#### Windows
+解壓縮後執行`sk5short.exe`
+
 ---
 docs folder actually is webpage root folder
 
