@@ -1,4 +1,10 @@
-# sk5short
+# sk5short 
+
+![](https://img.shields.io/github/v/release/sk5s/sk5short)
+![](https://img.shields.io/github/last-commit/sk5s/sk5short)
+![](https://img.shields.io/github/license/sk5s/sk5short)
+![](https://img.shields.io/github/languages/top/sk5s/sk5short)
+
 Sk5short make a short link just in a minutes, use javascript to redirect.
 
 ## 現在有把網頁版做成桌面應用程式囉！
