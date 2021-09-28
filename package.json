@@ -34,6 +34,5 @@
     "jshint-stylish": "^2.2.1"
   },
   "homepage": "https://www.sk5s.cyou/sk5short/",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
