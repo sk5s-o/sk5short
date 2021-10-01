@@ -33,6 +33,18 @@
       //basePath: 'https://raw.githubusercontent.com/sk5s/sk5short/main/docs/docs/',
       notFoundPage: true,
       relativePath: true,
+	  pagination: {
+        previousText: '上一篇',
+        nextText: '下一篇',
+        crossChapter: true,
+        crossChapterText: false,
+      },
+	  customPageTitle: {
+        prefix: false,
+        suffix: 'sk5short',
+        seprator: ' | ',
+        debug: false,
+      },
     }
 
     if (typeof navigator.serviceWorker !== 'undefined') {
@@ -43,5 +55,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script>
 </body>
 </html>
